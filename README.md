@@ -98,3 +98,18 @@ May the force be with you.
           LS |  #  |#  |      - Front View -
 
 (http://www.ascii-art.de/ascii/s/starwars.txt)
+
+# Solutions
+
+I came up with 2 ways to perform this task:
+1. Using unison
+2. Using rsync
+
+The 2 folders can also be synced over a cloud API like box, dropbox, etc but I refrained from using 
+that approach as I believe the data of our droid army should be protected and using a 3rd party cloud service to transfer the data
+between the folders would only make it much more vulnerable to be hacked and retrieved by the force on the other side.
+
+Out of the two options mentioned above, I would personally prefer this task to be performed using unison as rsync is unidirectional whereas
+unison is bidirectional. Moreover, the inotifywait command is not required with Unison as it has native support for watching folders.
+
+
